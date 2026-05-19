@@ -253,3 +253,28 @@
 }
 ```
 
+## Doxygen Documentation Generator
+- [Doxygen Documentation Generator 下载地址](https://marketplace.visualstudio.com/items?itemName=cschlosser.doxdocgen)
+- 个人配置
+```json
+{
+  "doxdocgen.generic.authorName": "XX",
+  "doxdocgen.generic.authorEmail": "XXXXX@CC.com",
+  "doxdocgen.c.triggerSequence": "/**", // 触发自动注释的生成
+  "doxdocgen.c.commentPrefix": " * ", // 注释行的前缀
+  "doxdocgen.c.firstLine": "/**", // 注释行的首行
+  "doxdocgen.c.lastLine": "*/", // 注释行的尾行
+  "doxdocgen.generic.order": [  // 注释字段顺序（从上到下排列）
+    "brief",
+    "param",
+    "return",
+  ],
+}
+```
+
+
+## XXX
+- [XXX 下载地址]()
+- 个人配置
+```json
+```
