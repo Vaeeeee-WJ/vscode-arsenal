@@ -272,9 +272,18 @@
 }
 ```
 
+## PlatformIO
+- [PlatformIO 下载地址](https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide)
+- 该插件安装核时会去国外安装，速度较慢，可参考[PlatformIO 离线安装](https://blog.csdn.net/WYW35416/article/details/145674518)
+- 个人配置
+```json
+```
 
 ## XXX
 - [XXX 下载地址]()
 - 个人配置
 ```json
 ```
+
+# Other
+- 离线安装插件：[https://lixian.online/vscode](https://lixian.online/vscode)
