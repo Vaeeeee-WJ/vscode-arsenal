@@ -90,6 +90,10 @@
   "extensions.autoCheckUpdates": false,
 ```
 
+# 基础操作
+- 常用快捷键
+  ![1784388640132](image/README/1784388640132.png)
+## [内置Git使用](vscode-Git.md)
 
 # 插件
 ## Vim
