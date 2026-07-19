@@ -276,6 +276,10 @@
 }
 ```
 
+## HexInspector
+- [HexInspector 下载地址](https://marketplace.visualstudio.com/items?itemName=mateuszchudyk.hexinspector)
+- 鼠标悬停在数字上，就可以看到对应的二进制、Ascii码、十六进制等信息
+  
 ## PlatformIO
 - [PlatformIO 下载地址](https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide)
 - 该插件安装核时会去国外安装，速度较慢，可参考[PlatformIO 离线安装](https://blog.csdn.net/WYW35416/article/details/145674518)
