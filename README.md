@@ -185,6 +185,23 @@
   },    // 禁用 Vim 对 Ctrl+A 和 Ctrl+F 的接管
 }
 ```
+  
+
+## Git History
+- [Git History 下载地址](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
+- 选中需要查看的文件，点击右键，选择“Git：View File History”或者快捷键`ALT + H`，即可查看该文件的提交历史。
+
+## Git Graph
+- [Git Graph 下载地址](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
+- 点击Vscode 左侧源代码管理GitGraph图标 或者  code下面 `GitGraph`选项即可将文件的提交历史以图形化的方式展示出来。
+- 点击某个commit会显示和上一个commit的差异（绿色表示新增，黄色表示修改），如果要查看某两个commit之间的差异，可以Ctrl选中两个文件进行查看
+
+
+## Open in GitHub, Bitbucket, Gitlab, VisualStudio.com !
+- [Open in GitHub, Bitbucket, Gitlab, VisualStudio.com ! 下载地址](https://marketplace.visualstudio.com/items?itemName=ziyasal.vscode-open-in-github)
+- 一键打开当前代码GitHub、Git等远程仓库地址，若选中代码行或区域，则直接定位到指定位置。选中文件或区域，点击右键，选择“Open in GitHub”即可打开指定文件或区域的远程仓库页面。
+
+
 
 ## Todo Tree
 - [Todo Tree 下载地址](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
