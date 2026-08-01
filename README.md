@@ -1,10 +1,12 @@
 # 基础配置
+
 - `settings.json`
+
 ```json
 "update.mode": "none",
   "update.enableWindowsBackgroundUpdates": false,
   "window.restoreWindows": "all",
-  "window.zoomLevel": 2,              // 缩放级别    
+  "window.zoomLevel": 2,              // 缩放级别  
   "files.autoSave": "afterDelay",
   "editor.mouseWheelZoom": true,      // 启用鼠标滚轮缩放
   "editor.cursorSmoothCaretAnimation": "on",
@@ -54,7 +56,7 @@
   "workbench.startupEditor": "none",
 
   "editor.formatOnPaste": true,                             // 粘贴时自动格式化 
-  "editor.fontLigatures": false,        
+  "editor.fontLigatures": false,      
   "editor.fontVariations": false,
   "editor.autoIndentOnPaste": true,                         // 粘贴时自动缩进   
   "explorer.confirmPasteNative": false,
@@ -67,7 +69,7 @@
   "terminal.integrated.env.linux": {},
 
   "[cpp]": {
-    
+  
     "editor.wordBasedSuggestions": "off",
     "editor.suggest.insertMode": "replace",
     "editor.semanticHighlighting.enabled": true
@@ -91,16 +93,37 @@
 ```
 
 # 基础操作
-- 常用快捷键
+
+- Windows的快捷键一览
   ![1784388640132](image/README/1784388640132.png)
+
+- 个人高频使用快捷键
+
+| 快捷键              | 功能说明                               |
+| :------------------ | :------------------------------------- |
+| `Ctrl+Shift+P`               | 打开命令面板                             |
+| `Ctrl+Shift+Tab`  | 在打开的文件中跳转  |
+| `Ctrl+P`  | 快速打开文件  |
+| `Shift+Alt+拖动光标`  | 列选择  |
+| `Alt+Left/Right`  | 后退/前进  |
+| `Ctrl+K Ctrl+0`  | 折叠所有区域 |
+| `Ctrl+K Ctrl+J`  | 展开所有区域 |
+
 ## [内置Git使用](vscode-Git.md)
 
 # 插件
+
+- 安装方法：
+  - 1、在扩展商店中（`Ctrl+Shift+X`）搜索安装；
+  - 2、命令行中安装，例如：`code --install-extension ms-vscode.cpptools`
+
 ## Vim
+
 - [Vim下载地址](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
 - Vim键位：
   ![1778691470414](image/README/1778691470414.png)
 - 个人配置：
+
 ```json
 {
   "vim.useCtrlKeys": false, //禁用Vim中Ctrl相关快捷键
@@ -177,7 +200,7 @@
   ],
 
   // 命令行模式自定义按键映射
-  "vim.commandLineModeKeyBindings": [],     
+  "vim.commandLineModeKeyBindings": [],   
   "vim.leader": "<space>",
   "vim.handleKeys": {
     "<C-a>": false,
@@ -185,27 +208,28 @@
   },    // 禁用 Vim 对 Ctrl+A 和 Ctrl+F 的接管
 }
 ```
-  
 
 ## Git History
+
 - [Git History 下载地址](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
-- 选中需要查看的文件，点击右键，选择“Git：View File History”或者快捷键`ALT + H`，即可查看该文件的提交历史。
+- 选中需要查看的文件，点击右键，选择“Git：View File History”或者快捷键 `ALT + H`，即可查看该文件的提交历史。
 
 ## Git Graph
+
 - [Git Graph 下载地址](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
 - 点击Vscode 左侧源代码管理GitGraph图标 或者  code下面 `GitGraph`选项即可将文件的提交历史以图形化的方式展示出来。
 - 点击某个commit会显示和上一个commit的差异（绿色表示新增，黄色表示修改），如果要查看某两个commit之间的差异，可以Ctrl选中两个文件进行查看
 
-
 ## Open in GitHub, Bitbucket, Gitlab, VisualStudio.com !
+
 - [Open in GitHub, Bitbucket, Gitlab, VisualStudio.com ! 下载地址](https://marketplace.visualstudio.com/items?itemName=ziyasal.vscode-open-in-github)
 - 一键打开当前代码GitHub、Git等远程仓库地址，若选中代码行或区域，则直接定位到指定位置。选中文件或区域，点击右键，选择“Open in GitHub”即可打开指定文件或区域的远程仓库页面。
 
-
-
 ## Todo Tree
+
 - [Todo Tree 下载地址](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
 - 个人配置
+
 ```json
 {
   // 自定义高亮关键词
@@ -275,8 +299,10 @@
 ```
 
 ## Doxygen Documentation Generator
+
 - [Doxygen Documentation Generator 下载地址](https://marketplace.visualstudio.com/items?itemName=cschlosser.doxdocgen)
 - 个人配置
+
 ```json
 {
   "doxdocgen.generic.authorName": "XX",
@@ -294,21 +320,30 @@
 ```
 
 ## HexInspector
+
 - [HexInspector 下载地址](https://marketplace.visualstudio.com/items?itemName=mateuszchudyk.hexinspector)
 - 鼠标悬停在数字上，就可以看到对应的二进制、Ascii码、十六进制等信息
-  
+
 ## PlatformIO
+
 - [PlatformIO 下载地址](https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide)
 - 该插件安装核时会去国外安装，速度较慢，可参考[PlatformIO 离线安装](https://blog.csdn.net/WYW35416/article/details/145674518)
 - 个人配置
-```json
-```
+
+## Markdown Outline
+
+- [Markdown Outline](https://marketplace.visualstudio.com/items?itemName=RobinZhao.markdown-outline)
+- 在Vscode中编写md文件时，可以 预览视图的大纲目录。
 
 ## XXX
+
 - [XXX 下载地址]()
 - 个人配置
+
 ```json
+
 ```
 
 # Other
+
 - 离线安装插件：[https://lixian.online/vscode](https://lixian.online/vscode)
