@@ -92,6 +92,7 @@
   "extensions.autoCheckUpdates": false,
 ```
 
+- `tasks.json`:用来将项目所需的重复性命令（如编译、测试、启动服务）固化为可在VS Code中一键运行的自动化任务 # TODO
 # 基础操作
 
 - Windows的快捷键一览
@@ -240,6 +241,16 @@
 
 - [HexInspector 下载地址](https://marketplace.visualstudio.com/items?itemName=mateuszchudyk.hexinspector)
 - 鼠标悬停在数字上，就可以看到对应的二进制、Ascii码、十六进制等信息
+
+
+## Keil Assistant
+
+- [Keil Assistant 下载地址](https://marketplace.visualstudio.com/items?itemName=CL.keil-assistant)
+- 实现 VS Code（写代码） + Keil（编译/下载）丝滑开发； 需进行简单配置 Keil Assistant 路径：设置中找到`Keil Assistant.MDK: Uv4 Path
+MDK UV4.exe path`，输入自己电脑上`UV.exe`的路径即可\
+配置完成后，再左侧资源管理器中会出现`KEIL UVISION PROJECT`选项，点击该选项右侧`+`打开`.uvprojx`工程文件，之后再Vscode就会显示和Keil工程中一样的文件结构。
+- [参考教程](https://blog.csdn.net/OBBLIN/article/details/159118587)
+
 
 ## PlatformIO
 
