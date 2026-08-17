@@ -250,13 +250,47 @@
 MDK UV4.exe path`，输入自己电脑上`UV.exe`的路径即可\
 配置完成后，再左侧资源管理器中会出现`KEIL UVISION PROJECT`选项，点击该选项右侧`+`打开`.uvprojx`工程文件，之后再Vscode就会显示和Keil工程中一样的文件结构。
 - [参考教程](https://blog.csdn.net/OBBLIN/article/details/159118587)
+- **编辑KEIL工程文件结构**：无法直接在Vscode中向Keil那样在工程中添加或删除文件， 可以通过修改`.uvoptx`文件的方法进行编辑：例如在以下组中定义了`Delay.c`和`Delay.h`文件，此时可以通过复制/删除代码的方式进行添加/删除文件(**注**：keil结构比较复杂，不一定能成功，最好是通过keil去添加文件)。
+```xml
+  <Group>
+    <GroupName>System</GroupName>
+    <tvExp>0</tvExp>
+    <tvExpOptDlg>0</tvExpOptDlg>
+    <cbSel>0</cbSel>
+    <RteFlg>0</RteFlg>
+    <File>
+      <GroupNumber>3</GroupNumber>
+      <FileNumber>11</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>.\System\Delay.c</PathWithFileName>
+      <FilenameWithoutPath>Delay.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>3</GroupNumber>
+      <FileNumber>12</FileNumber>
+      <FileType>5</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>.\System\Delay.h</PathWithFileName>
+      <FilenameWithoutPath>Delay.h</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+  </Group>
+```
 
 
 ## PlatformIO
 
 - [PlatformIO 下载地址](https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide)
 - 该插件安装核时会去国外安装，速度较慢，可参考[PlatformIO 离线安装](https://blog.csdn.net/WYW35416/article/details/145674518)
-- 个人配置
+- [PlatformIO最新文档](https://docs.platformio.org/en/latest/what-is-platformio.html?utm_source=github&utm_medium=core)
 
 ## Markdown Outline
 
