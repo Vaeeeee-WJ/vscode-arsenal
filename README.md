@@ -297,6 +297,40 @@ MDK UV4.exe path`，输入自己电脑上`UV.exe`的路径即可\
 - [Markdown Outline](https://marketplace.visualstudio.com/items?itemName=RobinZhao.markdown-outline)
 - 在Vscode中编写md文件时，可以 预览视图的大纲目录。
 
+## Ruff
+
+- [Ruff下载地址](https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff)
+- 应该是目前最强大的Python代码检查与格式化工具；使用快捷键 `Shift+Alt+F`可对当前python代码快速格式美化,或者使用以下配置保存时自动格式化；
+- 个人配置
+
+```json
+"[python]": { // 仅对 python 文件生效
+  "editor.defaultFormatter": "charliermarsh.ruff", // 默认使用 Ruff 格式化
+  "editor.formatOnSave": true, // 保存时自动格式化
+  "editor.codeActionsOnSave": {
+    "source.fixAll.ruff": "explicit", // 保存时自动修复可修复的 lint 错误
+    "source.organizeImports.ruff": "explicit", // 保存时自动排序 import 语句
+  }
+}
+```
+- Ruff其他规则可以通过在项目文件夹下的创建`pyproject.toml`或者`ruff.toml`文件来进行配置，例如在`pyproject.toml`设置
+```toml
+[tool.ruff]
+line-length = 120  # 代码最大行宽
+select = [         # 选择的规则
+    "F",
+    "E",
+    "W",
+    "UP",
+]
+ignore = ["F401"]  # 忽略的规则
+```
+
+
+
+
+
+
 ## XXX
 
 - [XXX 下载地址]()
