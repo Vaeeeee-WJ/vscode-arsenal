@@ -3,7 +3,9 @@
 - `settings.json`
 
 ```json
-"update.mode": "none",
+  // Vscode UI
+  "debug.console.fontSize": 17,
+  "update.mode": "none",
   "update.enableWindowsBackgroundUpdates": false,
   "window.restoreWindows": "all",
   "window.zoomLevel": 2,              // 缩放级别  
@@ -110,6 +112,7 @@
 | `Ctrl+K Ctrl+0`  | 折叠所有区域 |
 | `Ctrl+K Ctrl+J`  | 展开所有区域 |
 
+## TODO 测试
 ## [内置Git使用](vscode-Git.md)
 
 # 插件
@@ -326,7 +329,30 @@ select = [         # 选择的规则
 ignore = ["F401"]  # 忽略的规则
 ```
 
+## Claude Code for VS Code
 
+- [Claude Code for VS Code下载地址](https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code)
+- 个人配置
+
+```json
+"claudeCode.useTerminal":false,         // 设为 true 时，Claude 会在 VS Code 的集成终端里启动
+"claudeCode.disableLoginPrompt":true,   // 跳过 Anthropic 官方登录流程
+"claudeCode.focusView":true,            // 隐藏工具调用过程，界面更干净
+"claudeCode.environmentVariables": [    // 连接第三方模型，配置相应的字段
+  {
+    "name": "ANTHROPIC_AUTH_TOKEN",
+    "value": "sk-xxxxxxxxxxxxxxxxxxxxxxxxxx"
+  },
+  {
+    "name": "ANTHROPIC_BASE_URL",
+    "value": "https://api.senseaudio.cn"
+  },
+  {
+    "name": "ANTHROPIC_MODEL",
+    "value": "senseaudio-s2"
+  }
+],
+```
 
 
 
