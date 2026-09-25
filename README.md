@@ -1,6 +1,12 @@
 # 基础配置
-
-- `settings.json`
+Vscode中通过3个`json`文件进行配置：
+- `settings.json`:分为用户设置和工作区设置
+  - 用户设置：对所有项目生效，位于系统用户目录(`.\Code\User\settings.json`)
+  - 工作区设置:仅对当前项目生效，位于项目根目录的 `.vscode` 文件夹下
+- `launch.json`:调试配置
+- `tasks.json`:用来将项目所需的重复性命令（如编译、测试、启动服务）固化为可在VS Code中一键运行的自动化任务
+  
+## settings.json
 
 ```json
   // Vscode UI
@@ -93,8 +99,11 @@
   "extensions.autoUpdate": true,
   "extensions.autoCheckUpdates": false,
 ```
+## launch.json
+TODO
+## tasks.json
+TODO
 
-- `tasks.json`:用来将项目所需的重复性命令（如编译、测试、启动服务）固化为可在VS Code中一键运行的自动化任务 # TODO
 # 基础操作
 
 - Windows的快捷键一览
@@ -353,6 +362,15 @@ ignore = ["F401"]  # 忽略的规则
   }
 ],
 ```
+## Window Colors
+
+- [Window Colors 下载地址](https://marketplace.visualstudio.com/items?itemName=stuart.unique-window-colors)
+- 个人配置
+
+```json
+// 每次关闭工作区/窗口时，自动删除 .vscode/settings.json
+"windowColors.deleteSettingsFileUponExit": true,
+```
 
 
 
@@ -368,4 +386,4 @@ ignore = ["F401"]  # 忽略的规则
 
 # Other
 
-- 离线安装插件：[https://lixian.online/vscode](https://lixian.online/vscode)
+- 离线安装插件：[https://lixian.online/vscode](https://lixian.online/vscode) or [https://open-vsx.org/](https://open-vsx.org/)
