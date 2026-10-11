@@ -10,6 +10,8 @@ Vscode中通过3个`json`文件进行配置：
 
 ```json
   // Vscode UI
+  "editor.bracketPairColorization.enabled": true, // 开启括号配对颜色区分
+  "editor.guides.bracketPairs": true,             // 显示括号层级引导线
   "debug.console.fontSize": 17,
   "update.mode": "none",
   "update.enableWindowsBackgroundUpdates": false,
