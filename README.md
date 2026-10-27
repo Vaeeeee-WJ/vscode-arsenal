@@ -389,3 +389,6 @@ ignore = ["F401"]  # 忽略的规则
 # Other
 
 - 离线安装插件：[https://lixian.online/vscode](https://lixian.online/vscode) or [https://open-vsx.org/](https://open-vsx.org/)
+
+
+- [📽️VS Code 十周年官方纪录片](https://www.bilibili.com/video/BV13ZbE67ETx/?spm_id_from=333.337.search-card.all.click)

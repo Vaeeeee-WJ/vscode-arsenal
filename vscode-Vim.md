@@ -58,6 +58,10 @@
       "before":["a","a"],
       "after":["Escape", "I"]
     },
+    {
+      "before":["-","-"],
+      "after":["⟶"]
+    },
   ],
 
 
